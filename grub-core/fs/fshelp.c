@@ -254,7 +254,7 @@ find_file (char *currpath,
 	}
     }
 
-  return grub_error (GRUB_ERR_FILE_NOT_FOUND, N_("file `%s' not found"),
+  return grub_error (GRUB_ERR_FILE_NOT_FOUND, N_("fshelp.c file `%s' not found"),
 		     ctx->path);
 }
 

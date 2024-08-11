@@ -706,7 +706,7 @@ grub_dl_load_file (const char *filename)
   void *core = 0;
   grub_dl_t mod = 0;
 
-  grub_boot_time ("Loading module %s", filename);
+  grub_boot_time ("dl.c grub_dl_load_file() Loading module %s", filename);
 
   file = grub_file_open (filename, GRUB_FILE_TYPE_GRUB_MODULE);
   if (! file)
