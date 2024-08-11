@@ -168,6 +168,7 @@ find_file (char *currpath,
   grub_err_t err;
   for (name = currpath; ; name = next)
     {
+      grub_dprintf ("fs", "fshelp.c name: %s\n", name);
       char c;
       grub_fshelp_node_t foundnode = NULL;
       enum grub_fshelp_filetype foundtype = 0;
